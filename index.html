@@ -14,15 +14,16 @@
 <body>
 
   <header>
+
     <nav>
       <picture>
         <img src="./images/logo.svg" alt="">
       </picture>
       <ul>
-        <li class="dropdown">
+        <li class="dropdown" id="dropdown-features">
           <p>Features</p>
           <img src="./images/icon-arrow-down.svg" alt="">
-          <ul class="dropdown-content">
+          <ul class="dropdown-content features">
             <li>
               <img src="./images/icon-todo.svg" alt="">
               <p>Todo List</p>
@@ -41,10 +42,10 @@
             </li>
           </ul>
         </li>
-        <li class="dropdown">
+        <li class="dropdown" id="dropdown-company">
           <p>Company</p>
           <img src="./images/icon-arrow-down.svg" alt="">
-          <ul class="dropdown-content">
+          <ul class="dropdown-content company">
             <li>
               <p>History</p>
             </li>
@@ -56,20 +57,26 @@
             </li>
           </ul>
         </li>
-        <li>Careers</li>
-        <li>Blog</li>
+        <li>
+          <p>Careers</p>
+        </li>
+        <li>
+          <p>About</p>
+        </li>
       </ul>
     </nav>
+
     <ul>
       <li>
         <p>Login</p>
       </li>
-      <li><button>Register</button></li>
+      <li><a href="#">Register</a></li>
     </ul>
+
   </header>
 
 
-  <!--   <main>
+  <!-- 
     <section>
       <article>
         <h1>Make remote work</h1>
@@ -91,9 +98,10 @@
       <picture>
         <img src="./images/image-hero-desktop.png " alt="">
       </picture>
-    </section>
-  </main> -->
+    </section> 
+  -->
 
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script src="./assets/js/main.js"></script>
 
 </body>
