@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/styles/style.css">
 
   <title>Intro section with dropdown navigation | Vasco Marques</title>
 
@@ -18,10 +19,10 @@
         <img src="./images/logo.svg" alt="">
       </picture>
       <ul>
-        <li>
+        <li class="dropdown">
           <p>Features</p>
           <img src="./images/icon-arrow-down.svg" alt="">
-          <ul>
+          <ul class="dropdown-content">
             <li>
               <img src="./images/icon-todo.svg" alt="">
               <p>Todo List</p>
@@ -40,26 +41,35 @@
             </li>
           </ul>
         </li>
-        <li>Company
-          <ul>
-            <li>History</li>
-            <li>Our Team</li>
-            <li>Blog</li>
+        <li class="dropdown">
+          <p>Company</p>
+          <img src="./images/icon-arrow-down.svg" alt="">
+          <ul class="dropdown-content">
+            <li>
+              <p>History</p>
+            </li>
+            <li>
+              <p>Our Team</p>
+            </li>
+            <li>
+              <p>Blog</p>
+            </li>
           </ul>
         </li>
         <li>Careers</li>
         <li>Blog</li>
       </ul>
-
-      <ul>
-        <li>Login</li>
-        <li>Register</li>
-      </ul>
     </nav>
+    <ul>
+      <li>
+        <p>Login</p>
+      </li>
+      <li><button>Register</button></li>
+    </ul>
   </header>
 
 
-  <main>
+  <!--   <main>
     <section>
       <article>
         <h1>Make remote work</h1>
@@ -82,9 +92,8 @@
         <img src="./images/image-hero-desktop.png " alt="">
       </picture>
     </section>
-  </main>
+  </main> -->
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</body>
