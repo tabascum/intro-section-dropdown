@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Epilogue", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 :root {
@@ -15,8 +15,8 @@
   --medium-gray: hsl(0, 0%, 41%);
   --almost-black: hsl(0, 0%, 8%);
 
-  -fw-bold: 500;
-  -fw-bolder: 700;
+  --fw-bold: 500;
+  --fw-bolder: 700;
 }
 
 body {
@@ -34,14 +34,21 @@ header {
   width: min(1440px, 100%);
   justify-content: space-between;
   color: var(--medium-gray);
+  align-items: center;
 }
 
-header > nav {
+nav {
   display: inherit;
   align-items: center;
 
   & picture {
+    display: flex;
+    aign-items: center;
     margin-inline-end: 3rem;
+
+    & img {
+      width: 100%;
+    }
   }
 }
 
@@ -50,6 +57,7 @@ ul {
   display: inherit;
   align-items: center;
   gap: 2rem;
+  padding-block: 0.5rem;
 
   & li {
     display: flex;
@@ -88,6 +96,7 @@ li a:hover {
 }
 
 .dropdown-content {
+  background-color: var(--almost-white);
   position: absolute;
   border-radius: 0.5rem;
   box-shadow: 0rem 0.1rem 1rem 0.02rem var(--medium-gray);
@@ -95,13 +104,85 @@ li a:hover {
   top: 2.5rem;
 }
 
-.dropdown-content.features {
+.features {
   right: 0.1rem;
   display: none;
 }
 
-.dropdown-content.company {
+.company {
   left: 0.1rem;
   width: 8rem;
   display: none;
+}
+
+.show {
+  display: block;
+}
+
+main {
+  width: min(1440px, 100%);
+  display: inherit;
+  justify-content: space-around;
+  align-items: end;
+}
+
+main .text-container {
+  width: 28rem;
+  height: 30rem;
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--medium-gray);
+}
+
+main .text-container .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+main .text-container .text h1 {
+  font-size: 4.2rem;
+  color: var(--almost-black);
+  font-weight: var(--fw-bolder);
+}
+
+main .text-container .text p {
+  line-height: 1.5;
+  padding-inline-end: 2rem;
+}
+
+main .text-container .text button {
+  color: var(--almost-white);
+  background-color: var(--almost-black);
+  border: 0.1rem solid transparent;
+  padding: 0.9rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: 0.3s all;
+  width: 9rem;
+}
+
+main .text-container button:hover {
+  color: var(--almost-black);
+  background-color: var(--almost-white);
+  border: 0.1rem solid var(--almost-black);
+}
+
+main .foot-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .hero {
+  padding: 1rem;
+  height: auto;
+  width: 30rem;
+}
+
+main .hero img {
+  max-height: 100%;
+  max-width: 100%;
 }
