@@ -15,17 +15,12 @@
     transition: all 0.7s;
     font-size: 1.3rem;
     color: var(--medium-gray);
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  header nav .left-container,
-  header nav .right-container {
     display: block;
     padding-block-start: 4rem;
   }
 
   header nav .left-container {
+    padding-inline-start: 1.2rem;
     align-items: start;
     width: 80%;
   }
@@ -35,6 +30,7 @@
   }
 
   header nav .right-container {
+    padding-inline-start: 1.2rem;
     display: block;
   }
 
@@ -45,6 +41,24 @@
 
   header nav .right-container a {
     padding: 0.3rem 4rem;
+  }
+
+  .dropdown {
+    display: inline;
+    flex-direction: column;
+  }
+
+  .dropdown-content {
+    flex-direction: column;
+    position: static !important;
+    box-shadow: none !important;
+    border-radius: none !important;
+    padding: 0 1rem !important;
+  }
+
+  #dropdown-features,
+  #dropdown-company {
+    display: block;
   }
 
   #open-menu {
@@ -60,30 +74,45 @@
     z-index: 2;
   }
 
-  .dropdown {
-    display: grid;
-  }
-
-  .dropdown-content {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-
-    z-index: 3;
-  }
-
   main {
     flex-direction: column-reverse;
-    justify-content: center;
-    align-content: center;
+    justify-content: center !important;
+    align-content: center !important;
+  }
+
+  main .text-container {
+    max-width: 100%;
+    padding-block-start: 2rem !important;
+    text-align: center;
+  }
+
+  main .text-container .text {
+    gap: 1rem !important;
+    margin-block-end: 2rem !important;
+    align-items: center;
   }
 
   main .text-container .text p {
-    padding: 0;
+    padding: 0 0.2rem !important;
+  }
+
+  main .text-container .text h1 {
+    font-size: 2rem !important;
   }
 
   main .foot-images {
-    width: 80%;
+    align-items: center !important;
+    width: 100%;
+  }
+
+  main .foot-images picture {
+    height: auto;
+    width: 4.5rem;
+  }
+
+  main .foot-images img {
+    height: 100%;
+    width: 100%;
   }
 
   main .hero img {

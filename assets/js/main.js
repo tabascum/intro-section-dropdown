@@ -1,6 +1,9 @@
 const featuresDropdown = document.querySelector("#dropdown-features p");
 const companyDropdown = document.querySelector("#dropdown-company p");
 
+const featuresArrow = document.querySelector("#features-arrow");
+const companyArrow = document.querySelector("#company-arrow");
+
 featuresDropdown.onclick = () => {
   document.querySelector(".features").classList.toggle("show");
 };
