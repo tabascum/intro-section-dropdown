@@ -8,3 +8,20 @@ featuresDropdown.onclick = () => {
 companyDropdown.onclick = () => {
   document.querySelector(".company").classList.toggle("show");
 };
+
+const openMenu = document.querySelector("#open-menu");
+const closeMenu = document.querySelector("#close-button");
+
+openMenu.onclick = () => {
+  document.querySelector("nav").style.width = "250px";
+  openMenu.style.display = "none";
+  closeMenu.style.display = "block";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+};
+
+closeMenu.onclick = () => {
+  document.querySelector("nav").style.width = "0px";
+  openMenu.style.display = "block";
+  closeMenu.style.display = "none";
+  document.body.style.backgroundColor = "transparent";
+};

@@ -15,36 +15,38 @@
 
   <header>
 
+    <picture>
+      <img src="./images/logo.svg" alt="">
+    </picture>
+
     <nav>
-      <picture>
-        <img src="./images/logo.svg" alt="">
-      </picture>
-      <ul>
+      <ul class="left-container">
         <li class="dropdown" id="dropdown-features">
           <p>Features</p>
-          <img src="./images/icon-arrow-down.svg" alt="">
+          <img id="features-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
           <ul class="dropdown-content features">
+
             <li>
-              <img src="./images/icon-todo.svg" alt="">
+              <img src="./images/icon-todo.svg" alt="todo icon">
               <p>Todo List</p>
             </li>
             <li>
-              <img src="./images/icon-calendar.svg" alt="">
+              <img src="./images/icon-calendar.svg" alt="calendar icon">
               <p>Calendar</p>
             </li>
             <li>
-              <img src="./images/icon-reminders.svg" alt="">
+              <img src="./images/icon-reminders.svg" alt="reminders icon">
               <p>Reminders</p>
             </li>
             <li>
-              <img src="./images/icon-planning.svg" alt="">
+              <img src="./images/icon-planning.svg" alt="planning icon">
               <p>Planning </p>
             </li>
           </ul>
         </li>
         <li class="dropdown" id="dropdown-company">
           <p>Company</p>
-          <img src="./images/icon-arrow-down.svg" alt="">
+          <img id="company-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
           <ul class="dropdown-content company">
             <li>
               <p>History</p>
@@ -64,14 +66,19 @@
           <p>About</p>
         </li>
       </ul>
+
+      <ul class="right-container">
+        <li>
+          <p>Login</p>
+        </li>
+        <li><a href="#">Register</a></li>
+      </ul>
+
+      <img id="close-button" src="./images/icon-close-menu.svg" alt="close button" hidden>
+
     </nav>
 
-    <ul>
-      <li>
-        <p>Login</p>
-      </li>
-      <li><a href="#">Register</a></li>
-    </ul>
+    <img id="open-menu" src="./images/icon-menu.svg" alt="menu icon" hidden>
 
   </header>
 
@@ -88,17 +95,17 @@
         <button>Learn more</button>
       </article>
       <article class="foot-images">
-        <picture><img src="./images/client-databiz.svg" alt=""></picture>
-        <picture><img src="./images/client-audiophile.svg" alt="">
+        <picture><img src="./images/client-databiz.svg" alt="client-databiz image"></picture>
+        <picture><img src="./images/client-audiophile.svg" alt="client-audiophile image">
         </picture>
-        <picture><img src="./images/client-meet.svg" alt=""></picture>
-        <picture><img src="./images/client-maker.svg" alt=""></picture>
+        <picture><img src="./images/client-meet.svg" alt="client-meet image"></picture>
+        <picture><img src="./images/client-maker.svg" alt="client-maker image"></picture>
       </article>
     </section>
 
     <section class="hero">
       <picture>
-        <img src="./images/image-hero-desktop.png " alt="">
+        <img src="./images/image-hero-desktop.png " alt="hero desktop male with computer">
       </picture>
     </section>
   </main>

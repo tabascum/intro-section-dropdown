@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+@import url("./responsive.css");
 
 *,
 *::before,
@@ -30,26 +31,22 @@ body {
 
 header {
   display: inherit;
-  height: 5rem;
-  width: min(1440px, 100%);
+  width: min(1390px, 100%);
+  padding-block: 1rem;
   justify-content: space-between;
   color: var(--medium-gray);
   align-items: center;
 }
 
+header picture {
+  padding-block-start: 0.5rem;
+}
+
 nav {
   display: inherit;
   align-items: center;
-
-  & picture {
-    display: flex;
-    aign-items: center;
-    margin-inline-end: 3rem;
-
-    & img {
-      width: 100%;
-    }
-  }
+  justify-content: inherit;
+  width: 90%;
 }
 
 ul {
@@ -107,6 +104,7 @@ li a:hover {
 .features {
   right: 0.1rem;
   display: none;
+  width: auto;
 }
 
 .company {
@@ -120,15 +118,15 @@ li a:hover {
 }
 
 main {
-  width: min(1440px, 100%);
+  width: min(1390px, 100%);
   display: inherit;
   justify-content: space-around;
   align-items: end;
 }
 
 main .text-container {
-  width: 28rem;
-  height: 30rem;
+  padding-block-start: 6rem;
+  width: 30em;
   display: inherit;
   flex-direction: column;
   justify-content: space-between;
@@ -139,18 +137,19 @@ main .text-container .text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 2.5rem;
+  margin-block-end: 4.5rem;
 }
 
 main .text-container .text h1 {
-  font-size: 4.2rem;
+  font-size: 4.5rem;
   color: var(--almost-black);
   font-weight: var(--fw-bolder);
 }
 
 main .text-container .text p {
   line-height: 1.5;
-  padding-inline-end: 2rem;
+  padding-inline-end: 3.5rem;
 }
 
 main .text-container .text button {
@@ -173,13 +172,13 @@ main .text-container button:hover {
 main .foot-images {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 main .hero {
   padding: 1rem;
-  height: auto;
-  width: 30rem;
+  max-height: auto;
+  max-width: 29rem;
 }
 
 main .hero img {

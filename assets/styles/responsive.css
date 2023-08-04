@@ -1,0 +1,92 @@
+@media (max-width: 1000px) {
+  header {
+    padding: 2rem 1rem;
+  }
+
+  header nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--almost-white);
+    overflow-x: hidden;
+    transition: all 0.7s;
+    font-size: 1.3rem;
+    color: var(--medium-gray);
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  header nav .left-container,
+  header nav .right-container {
+    display: block;
+    padding-block-start: 4rem;
+  }
+
+  header nav .left-container {
+    align-items: start;
+    width: 80%;
+  }
+
+  header nav .left-container li {
+    padding-block: 0.5rem;
+  }
+
+  header nav .right-container {
+    display: block;
+  }
+
+  header nav .right-container p {
+    margin-inline-start: 4.7rem;
+    margin-block-end: 0.5rem;
+  }
+
+  header nav .right-container a {
+    padding: 0.3rem 4rem;
+  }
+
+  #open-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  #close-button {
+    display: none;
+    position: fixed;
+    top: 1.3rem;
+    right: 1.2rem;
+    z-index: 2;
+  }
+
+  .dropdown {
+    display: grid;
+  }
+
+  .dropdown-content {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+
+    z-index: 3;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+  }
+
+  main .text-container .text p {
+    padding: 0;
+  }
+
+  main .foot-images {
+    width: 80%;
+  }
+
+  main .hero img {
+    content: url("../../images/image-hero-mobile.png");
+  }
+}
